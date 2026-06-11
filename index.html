@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TNF Group | T&N Financial Group</title>
+  <meta name="description" content="Công ty Cổ phần T&N Financial Group — Đối tác tài chính chiến lược tại Việt Nam." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+
+<!-- ═══════════════════════════════════════════════════════ NAVBAR ══ -->
+<nav id="navbar">
+  <div class="container">
+    <div class="nav-wrap">
+
+      <a href="#hero" class="nav-logo">
+        <img src="assets/images/logo.png" alt="TNF Group — T&N Financial Group" height="44" />
+      </a>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#hero"       data-vi="Trang chủ"         data-en="Home">Trang chủ</a>
+        <a href="#about"      data-vi="Giới thiệu"        data-en="About">Giới thiệu</a>
+        <a href="#services"   data-vi="Dịch vụ"           data-en="Services">Dịch vụ</a>
+        <a href="#disclosure" data-vi="Công bố thông tin" data-en="Disclosure">Công bố TT</a>
+        <a href="#contact"    data-vi="Liên hệ"           data-en="Contact">Liên hệ</a>
+      </div>
+
+      <div class="nav-actions">
+        <button class="lang-toggle" id="langBtn" aria-label="Chuyển ngôn ngữ">EN</button>
+        <button class="hamburger" id="hamburger" aria-label="Mở menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#hero"       onclick="closeMenu()" data-vi="Trang chủ"         data-en="Home">Trang chủ</a>
+    <a href="#about"      onclick="closeMenu()" data-vi="Giới thiệu"        data-en="About">Giới thiệu</a>
+    <a href="#services"   onclick="closeMenu()" data-vi="Dịch vụ"           data-en="Services">Dịch vụ</a>
+    <a href="#disclosure" onclick="closeMenu()" data-vi="Công bố thông tin" data-en="Disclosure">Công bố TT</a>
+    <a href="#contact"    onclick="closeMenu()" data-vi="Liên hệ"           data-en="Contact">Liên hệ</a>
+  </div>
+</nav>
+
+
+<!-- ═══════════════════════════════════════════════════════ HERO ══ -->
+<section id="hero">
+  <div class="hero-bg-grid"></div>
+  <div class="hero-glow-a"></div>
+  <div class="hero-glow-b"></div>
+  <div class="hero-ring" style="width:640px;height:640px;top:-180px;right:-180px;"></div>
+  <div class="hero-ring" style="width:420px;height:420px;top:-60px;right:-60px;"></div>
+
+  <!-- content -->
+  <div class="hero-main">
+    <div class="container">
+      <div class="hero-tag">
+        <div class="hero-tag-line"></div>
+        <span data-vi="Công ty Cổ phần" data-en="Joint Stock Company">Công ty Cổ phần</span>
+      </div>
+
+      <h1 class="hero-title">
+        T&amp;N <span class="brand-word">Financial</span><br>Group
+      </h1>
+
+      <p class="hero-desc"
+         data-vi="Đối tác tài chính chiến lược — kết nối nguồn vốn, kiến tạo tăng trưởng bền vững cho doanh nghiệp Việt Nam."
+         data-en="Strategic financial partner — connecting capital, building sustainable growth for Vietnamese enterprises.">
+        Đối tác tài chính chiến lược — kết nối nguồn vốn, kiến tạo tăng trưởng bền vững cho doanh nghiệp Việt Nam.
+      </p>
+
+      <div class="hero-kpis">
+        <div>
+          <div class="kpi-num">2017</div>
+          <div class="kpi-label" data-vi="Năm thành lập" data-en="Founded">Năm thành lập</div>
+        </div>
+        <div>
+          <div class="kpi-num">500+</div>
+          <div class="kpi-label" data-vi="Đối tác doanh nghiệp" data-en="Corporate partners">Đối tác doanh nghiệp</div>
+        </div>
+        <div>
+          <div class="kpi-num">TP.HCM</div>
+          <div class="kpi-label" data-vi="Trụ sở chính" data-en="Headquarters">Trụ sở chính</div>
+        </div>
+      </div>
+
+      <div class="hero-ctas">
+        <a href="#services" class="btn btn-orange">
+          <span data-vi="Khám phá dịch vụ" data-en="Explore Services">Khám phá dịch vụ</span>
+          <svg fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#contact" class="btn btn-outline">
+          <span data-vi="Liên hệ tư vấn" data-en="Contact Us">Liên hệ tư vấn</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-scroll">
+    <a href="#about">
+      <span data-vi="Tìm hiểu thêm" data-en="Learn more">Tìm hiểu thêm</span>
+      <div class="scroll-caret"></div>
+    </a>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════ ABOUT ══ -->
+<section id="about">
+  <div class="container">
+
+    <div class="about-intro reveal">
+      <div class="eyebrow">
+        <div class="brand-rule"></div>
+        <span class="eyebrow-label" data-vi="Về chúng tôi" data-en="About Us">Về chúng tôi</span>
+      </div>
+      <h2 class="section-heading"
+          data-vi="Đối tác tài chính đáng tin cậy tại Việt Nam"
+          data-en="Vietnam's Trusted Financial Partner">
+        Đối tác tài chính đáng tin cậy tại Việt Nam
+      </h2>
+      <p class="section-sub"
+         data-vi="Công ty Cổ phần T&N Financial Group (TNF) hoạt động trong lĩnh vực tài chính, được thành lập với mục tiêu kết nối nguồn vốn và cung cấp các giải pháp tài chính toàn diện cho doanh nghiệp Việt Nam."
+         data-en="T&N Financial Group Joint Stock Company (TNF) operates in the financial sector, established with the mission of connecting capital and providing comprehensive financial solutions for Vietnamese enterprises.">
+        Công ty Cổ phần T&amp;N Financial Group (TNF) hoạt động trong lĩnh vực tài chính, được thành lập với mục tiêu kết nối nguồn vốn và cung cấp các giải pháp tài chính toàn diện cho doanh nghiệp Việt Nam.
+      </p>
+    </div>
+
+    <div class="about-grid reveal">
+      <div>
+        <div class="mission-box">
+          <h3 data-vi="Sứ mệnh" data-en="Mission">Sứ mệnh</h3>
+          <p data-vi="Trở thành cầu nối tài chính chiến lược, tạo ra hệ sinh thái vốn hiệu quả, thúc đẩy sự phát triển của nền kinh tế Việt Nam thông qua các giải pháp tài chính sáng tạo và bền vững."
+             data-en="To become a strategic financial bridge, creating an efficient capital ecosystem and driving the development of Vietnam's economy through innovative and sustainable financial solutions.">
+            Trở thành cầu nối tài chính chiến lược, tạo ra hệ sinh thái vốn hiệu quả, thúc đẩy sự phát triển của nền kinh tế Việt Nam thông qua các giải pháp tài chính sáng tạo và bền vững.
+          </p>
+        </div>
+        <div class="vision-box">
+          <h3 data-vi="Tầm nhìn" data-en="Vision">Tầm nhìn</h3>
+          <p data-vi="Trở thành tập đoàn tài chính đa dịch vụ hàng đầu Việt Nam, được công nhận về năng lực chuyên môn, uy tín và chất lượng dịch vụ."
+             data-en="To become a leading multi-service financial group in Vietnam, recognized for professional expertise, credibility, and service quality.">
+            Trở thành tập đoàn tài chính đa dịch vụ hàng đầu Việt Nam, được công nhận về năng lực chuyên môn, uy tín và chất lượng dịch vụ.
+          </p>
+        </div>
+      </div>
+      <div>
+        <div class="stats-4">
+          <div class="stat-tile">
+            <div class="num">87A</div>
+            <div class="sub">Hàm Nghi, Q.1</div>
+            <div class="lbl" data-vi="Trụ sở chính" data-en="Headquarters">Trụ sở chính</div>
+          </div>
+          <div class="stat-tile">
+            <div class="num">2017</div>
+            <div class="sub" data-vi="Thành lập" data-en="Established">Thành lập</div>
+            <div class="lbl" data-vi="Hoạt động liên tục" data-en="Continuous operation">Hoạt động liên tục</div>
+          </div>
+          <div class="stat-tile">
+            <div class="num">HOSE</div>
+            <div class="sub">TPS Partnership</div>
+            <div class="lbl" data-vi="Hợp tác chiến lược" data-en="Strategic partner">Hợp tác chiến lược</div>
+          </div>
+          <div class="stat-tile">
+            <div class="num">VAS</div>
+            <div class="sub" data-vi="Chuẩn mực kế toán" data-en="Accounting standards">Chuẩn mực kế toán</div>
+            <div class="lbl" data-vi="Tuân thủ quy định" data-en="Fully compliant">Tuân thủ quy định</div>
+          </div>
+        </div>
+        <p class="about-note"
+           data-vi="TNF hoạt động trên cơ sở tuân thủ đầy đủ quy định pháp luật Việt Nam, với cam kết về tính minh bạch và chất lượng dịch vụ trong mọi hoạt động tài chính."
+           data-en="TNF operates in full compliance with Vietnamese legal regulations, with a commitment to transparency and service quality across all financial activities.">
+          TNF hoạt động trên cơ sở tuân thủ đầy đủ quy định pháp luật Việt Nam, với cam kết về tính minh bạch và chất lượng dịch vụ trong mọi hoạt động tài chính.
+        </p>
+      </div>
+    </div>
+
+    <div class="values-row reveal">
+      <div class="val-card">
+        <div class="val-icon">
+          <svg fill="none" stroke-width="1.8" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <h4 data-vi="Minh bạch" data-en="Transparency">Minh bạch</h4>
+        <p data-vi="Công bố thông tin đầy đủ, hoạt động theo nguyên tắc quản trị doanh nghiệp tốt nhất."
+           data-en="Full disclosure, operating on best corporate governance principles.">
+          Công bố thông tin đầy đủ, hoạt động theo nguyên tắc quản trị doanh nghiệp tốt nhất.
+        </p>
+      </div>
+      <div class="val-card">
+        <div class="val-icon">
+          <svg fill="none" stroke-width="1.8" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+        <h4 data-vi="Chuyên nghiệp" data-en="Professionalism">Chuyên nghiệp</h4>
+        <p data-vi="Đội ngũ chuyên gia tài chính dày dạn kinh nghiệm, am hiểu thị trường Việt Nam."
+           data-en="Experienced financial experts with deep knowledge of the Vietnamese market.">
+          Đội ngũ chuyên gia tài chính dày dạn kinh nghiệm, am hiểu thị trường Việt Nam.
+        </p>
+      </div>
+      <div class="val-card">
+        <div class="val-icon">
+          <svg fill="none" stroke-width="1.8" viewBox="0 0 24 24"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
+        </div>
+        <h4 data-vi="Tăng trưởng bền vững" data-en="Sustainable Growth">Tăng trưởng bền vững</h4>
+        <p data-vi="Chiến lược tài chính dài hạn, tối ưu hóa giá trị cho doanh nghiệp và nhà đầu tư."
+           data-en="Long-term financial strategies, maximizing value for enterprises and investors.">
+          Chiến lược tài chính dài hạn, tối ưu hóa giá trị cho doanh nghiệp và nhà đầu tư.
+        </p>
+      </div>
+      <div class="val-card">
+        <div class="val-icon">
+          <svg fill="none" stroke-width="1.8" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <h4 data-vi="Đồng hành" data-en="Partnership">Đồng hành</h4>
+        <p data-vi="Xây dựng quan hệ đối tác chiến lược, đồng hành cùng khách hàng trên mọi bước phát triển."
+           data-en="Building strategic partnerships, supporting clients at every step of their growth.">
+          Xây dựng quan hệ đối tác chiến lược, đồng hành cùng khách hàng trên mọi bước phát triển.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════ SERVICES ══ -->
+<section id="services">
+  <div class="container">
+
+    <div class="services-hd reveal">
+      <div class="eyebrow center light">
+        <div class="brand-rule"></div>
+        <span class="eyebrow-label" data-vi="Dịch vụ" data-en="Services">Dịch vụ</span>
+        <div class="brand-rule"></div>
+      </div>
+      <h2 class="section-heading light"
+          data-vi="Sản phẩm & Dịch vụ" data-en="Products & Services">
+        Sản phẩm &amp; Dịch vụ
+      </h2>
+      <p class="section-sub light"
+         data-vi="Danh mục dịch vụ tài chính toàn diện, đáp ứng mọi nhu cầu của doanh nghiệp."
+         data-en="A comprehensive portfolio of financial services meeting all enterprise needs.">
+        Danh mục dịch vụ tài chính toàn diện, đáp ứng mọi nhu cầu của doanh nghiệp.
+      </p>
+    </div>
+
+    <div class="services-grid reveal">
+
+      <div class="svc-card p-accent">
+        <span class="svc-tag p" data-vi="Cốt lõi" data-en="Core">Cốt lõi</span>
+        <div class="svc-icon p">
+          <svg fill="none" stroke-width="1.8" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><line x1="12" y1="12" x2="12" y2="16"/><line x1="10" y1="14" x2="14" y2="14"/></svg>
+        </div>
+        <h3 data-vi="Quản lý vốn & Ngân quỹ" data-en="Capital & Treasury Management">Quản lý vốn &amp; Ngân quỹ</h3>
+        <p data-vi="Tối ưu hóa cấu trúc vốn và quản lý ngân quỹ hiệu quả, đảm bảo thanh khoản và sinh lời cho doanh nghiệp."
+           data-en="Optimize capital structure and efficient treasury management, ensuring liquidity and profitability for enterprises.">
+          Tối ưu hóa cấu trúc vốn và quản lý ngân quỹ hiệu quả, đảm bảo thanh khoản và sinh lời cho doanh nghiệp.
+        </p>
+      </div>
+
+      <div class="svc-card o-accent">
+        <span class="svc-tag o" data-vi="Đầu tư" data-en="Investment">Đầu tư</span>
+        <div class="svc-icon o">
+          <svg fill="none" stroke-width="1.8" viewBox="0 0 24 24"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg>
+        </div>
+        <h3 data-vi="Hợp tác đầu tư" data-en="Investment Cooperation">Hợp tác đầu tư</h3>
+        <p data-vi="Kết nối nhà đầu tư với cơ hội đầu tư tiềm năng, đồng hành thực hiện các dự án đầu tư chiến lược."
+           data-en="Connect investors with potential investment opportunities, co-executing strategic investment projects.">
+          Kết nối nhà đầu tư với cơ hội đầu tư tiềm năng, đồng hành thực hiện các dự án đầu tư chiến lược.
+        </p>
+      </div>
+
+      <div class="svc-card p-accent">
+        <span class="svc-tag p" data-vi="Giải pháp" data-en="Solutions">Giải pháp</span>
+        <div class="svc-icon p">
+          <svg fill="none" stroke-width="1.8" viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        </div>
+        <h3 data-vi="Giải pháp tài chính" data-en="Financial Solutions">Giải pháp tài chính</h3>
+        <p data-vi="Thiết kế các giải pháp tài chính linh hoạt, phù hợp với đặc thù và mục tiêu phát triển của từng doanh nghiệp."
+           data-en="Designing flexible financial solutions tailored to the specific characteristics and development goals of each enterprise.">
+          Thiết kế các giải pháp tài chính linh hoạt, phù hợp với đặc thù và mục tiêu phát triển của từng doanh nghiệp.
+        </p>
+      </div>
+
+      <div class="svc-card o-accent">
+        <span class="svc-tag o">Corporate</span>
+        <div class="svc-icon o">
+          <svg fill="none" stroke-width="1.8" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        </div>
+        <h3 data-vi="Hỗ trợ tài chính doanh nghiệp" data-en="Corporate Finance Support">Hỗ trợ tài chính doanh nghiệp</h3>
+        <p data-vi="Tư vấn tái cơ cấu tài chính, hỗ trợ M&A, phát hành trái phiếu và các giao dịch tài chính doanh nghiệp."
+           data-en="Advisory on financial restructuring, M&A support, bond issuance, and other corporate financial transactions.">
+          Tư vấn tái cơ cấu tài chính, hỗ trợ M&amp;A, phát hành trái phiếu và các giao dịch tài chính doanh nghiệp.
+        </p>
+      </div>
+
+      <div class="svc-card p-accent">
+        <span class="svc-tag p" data-vi="Tài sản" data-en="Assets">Tài sản</span>
+        <div class="svc-icon p">
+          <svg fill="none" stroke-width="1.8" viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+        </div>
+        <h3 data-vi="Quản lý tài sản" data-en="Asset Management">Quản lý tài sản</h3>
+        <p data-vi="Quản lý danh mục đầu tư đa dạng, bao gồm cổ phiếu, trái phiếu và các tài sản tài chính khác."
+           data-en="Diversified portfolio management, including stocks, bonds, and other financial assets.">
+          Quản lý danh mục đầu tư đa dạng, bao gồm cổ phiếu, trái phiếu và các tài sản tài chính khác.
+        </p>
+      </div>
+
+      <div class="svc-card o-accent">
+        <span class="svc-tag o" data-vi="Tư vấn" data-en="Advisory">Tư vấn</span>
+        <div class="svc-icon o">
+          <svg fill="none" stroke-width="1.8" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+        </div>
+        <h3 data-vi="Dịch vụ tư vấn khác" data-en="Other Advisory Services">Dịch vụ tư vấn khác</h3>
+        <p data-vi="Các dịch vụ tư vấn tài chính chuyên biệt, được thiết kế theo yêu cầu cụ thể của từng khách hàng."
+           data-en="Specialized financial advisory services, designed according to specific client requirements.">
+          Các dịch vụ tư vấn tài chính chuyên biệt, được thiết kế theo yêu cầu cụ thể của từng khách hàng.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════ DISCLOSURE ══ -->
+<section id="disclosure">
+  <div class="container">
+
+    <div class="disc-intro reveal">
+      <div class="eyebrow">
+        <div class="brand-rule"></div>
+        <span class="eyebrow-label" data-vi="Quan hệ cổ đông" data-en="Investor Relations">Quan hệ cổ đông</span>
+      </div>
+      <h2 class="section-heading"
+          data-vi="Công bố thông tin" data-en="Information Disclosure">
+        Công bố thông tin
+      </h2>
+      <p class="section-sub"
+         data-vi="Minh bạch hóa thông tin tài chính và hoạt động công ty theo quy định pháp luật."
+         data-en="Transparent disclosure of financial and corporate information in accordance with regulations.">
+        Minh bạch hóa thông tin tài chính và hoạt động công ty theo quy định pháp luật.
+      </p>
+    </div>
+
+    <div class="disc-cols reveal">
+
+      <!-- Báo cáo tài chính -->
+      <div class="disc-col">
+        <div class="disc-col-head">
+          <div class="disc-col-icon">
+            <svg fill="none" stroke-width="1.8" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+          </div>
+          <h3 data-vi="Báo cáo tài chính" data-en="Financial Reports">Báo cáo tài chính</h3>
+          <span class="disc-count">1</span>
+        </div>
+        <div class="disc-row">
+          <button class="disc-row-btn" onclick="toggleDisc(this)">
+            <div>
+              <div class="disc-row-title" data-vi="TNF: BÁO CÁO TÀI CHÍNH QUÝ 1 NĂM 2024" data-en="TNF: Q1 2024 FINANCIAL REPORT">TNF: BÁO CÁO TÀI CHÍNH QUÝ 1 NĂM 2024</div>
+              <div class="disc-row-date">
+                <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                19/04/2024
+              </div>
+            </div>
+            <svg class="disc-chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="disc-panel">
+            <p data-vi="Công ty CP T&N Financial Group công bố Báo cáo tài chính Quý 1 năm 2024 và Giải trình biến động lợi nhuận so với cùng kỳ năm 2023."
+               data-en="T&N Financial Group Joint Stock Company announces Q1 2024 Financial Report and profit variance explanation compared to Q1 2023.">
+              Công ty CP T&amp;N Financial Group công bố Báo cáo tài chính Quý 1 năm 2024 và Giải trình biến động lợi nhuận so với cùng kỳ năm 2023.
+            </p>
+            <!-- Khi có file PDF, bỏ comment dòng dưới và cập nhật đường dẫn -->
+            <!--
+            <a class="file-link" href="assets/files/bctc-q1-2024.pdf" target="_blank">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              Tải về BCTC Q1/2024 (PDF)
+            </a>
+            -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Điều lệ công ty -->
+      <div class="disc-col">
+        <div class="disc-col-head">
+          <div class="disc-col-icon">
+            <svg fill="none" stroke-width="1.8" viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+          </div>
+          <h3 data-vi="Điều lệ công ty" data-en="Company Charter">Điều lệ công ty</h3>
+          <span class="disc-count">1</span>
+        </div>
+        <div class="disc-row">
+          <button class="disc-row-btn" onclick="toggleDisc(this)">
+            <div>
+              <div class="disc-row-title" data-vi="TNF: ĐIỀU LỆ CÔNG TY NGÀY 19/04/2024" data-en="TNF: COMPANY CHARTER DATED 19/04/2024">TNF: ĐIỀU LỆ CÔNG TY NGÀY 19/04/2024</div>
+              <div class="disc-row-date">
+                <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                19/04/2024
+              </div>
+            </div>
+            <svg class="disc-chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="disc-panel">
+            <p data-vi="Điều lệ Công ty Cổ phần T&N Financial Group được sửa đổi, bổ sung và thông qua tại Đại hội đồng cổ đông ngày 19/04/2024."
+               data-en="The charter of T&N Financial Group Joint Stock Company was amended and approved at the Shareholders' General Meeting on 19/04/2024.">
+              Điều lệ Công ty Cổ phần T&amp;N Financial Group được sửa đổi, bổ sung và thông qua tại Đại hội đồng cổ đông ngày 19/04/2024.
+            </p>
+            <!--
+            <a class="file-link" href="assets/files/dieu-le-cong-ty-2024.pdf" target="_blank">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              Tải về Điều lệ (PDF)
+            </a>
+            -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Thông báo -->
+      <div class="disc-col">
+        <div class="disc-col-head">
+          <div class="disc-col-icon">
+            <svg fill="none" stroke-width="1.8" viewBox="0 0 24 24"><path d="M22 17H2a3 3 0 0 0 3-3V9a7 7 0 0 1 14 0v5a3 3 0 0 0 3 3zm-8.27 4a2 2 0 0 1-3.46 0"/></svg>
+          </div>
+          <h3 data-vi="Thông báo" data-en="Announcements">Thông báo</h3>
+          <span class="disc-count">2</span>
+        </div>
+        <div class="disc-row">
+          <button class="disc-row-btn" onclick="toggleDisc(this)">
+            <div>
+              <div class="disc-row-title" data-vi="THÔNG BÁO BẢO TRÌ HỆ THỐNG" data-en="SYSTEM MAINTENANCE NOTICE">THÔNG BÁO BẢO TRÌ HỆ THỐNG</div>
+              <div class="disc-row-date"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>27/04/2024</div>
+            </div>
+            <svg class="disc-chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="disc-panel">
+            <p data-vi="TNF thông báo lịch bảo trì hệ thống giao dịch từ 18h00 ngày 26/04/2024 đến 05h00 ngày 02/05/2024. Sau thời gian trên, Quý Khách hàng có thể sử dụng dịch vụ bình thường."
+               data-en="TNF announces system maintenance from 18:00 on 26/04/2024 to 05:00 on 02/05/2024. After this time, customers can use the service normally.">
+              TNF thông báo lịch bảo trì hệ thống giao dịch từ 18h00 ngày 26/04/2024 đến 05h00 ngày 02/05/2024. Sau thời gian trên, Quý Khách hàng có thể sử dụng dịch vụ bình thường.
+            </p>
+          </div>
+          <button class="disc-row-btn" onclick="toggleDisc(this)">
+            <div>
+              <div class="disc-row-title" data-vi="THÔNG BÁO LỊCH NGHỈ LỄ 30/4 & 1/5" data-en="HOLIDAY SCHEDULE 30/4 & 1/5">THÔNG BÁO LỊCH NGHỈ LỄ 30/4 &amp; 1/5</div>
+              <div class="disc-row-date"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>25/04/2024</div>
+            </div>
+            <svg class="disc-chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="disc-panel">
+            <p data-vi="TNF thông báo lịch nghỉ Lễ 30/4 và 1/5: Nghỉ giao dịch từ 29/04 đến hết 01/05/2024. Giao dịch trở lại từ ngày 02/05/2024."
+               data-en="TNF announces the 30/4 and 1/5 holiday: Trading suspended from 29/04 to 01/05/2024. Trading resumes from 02/05/2024.">
+              TNF thông báo lịch nghỉ Lễ 30/4 và 1/5: Nghỉ giao dịch từ 29/04 đến hết 01/05/2024. Giao dịch trở lại từ ngày 02/05/2024.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════ CONTACT ══ -->
+<section id="contact">
+  <div class="container">
+
+    <div class="contact-hd reveal">
+      <div class="eyebrow center">
+        <div class="brand-rule"></div>
+        <span class="eyebrow-label" data-vi="Liên hệ" data-en="Contact">Liên hệ</span>
+        <div class="brand-rule"></div>
+      </div>
+      <h2 class="section-heading"
+          data-vi="Bắt đầu hợp tác cùng TNF" data-en="Start Your Partnership with TNF">
+        Bắt đầu hợp tác cùng TNF
+      </h2>
+      <p class="section-sub"
+         data-vi="Đội ngũ chuyên gia của chúng tôi sẵn sàng tư vấn và hỗ trợ bạn."
+         data-en="Our expert team is ready to advise and support you.">
+        Đội ngũ chuyên gia của chúng tôi sẵn sàng tư vấn và hỗ trợ bạn.
+      </p>
+    </div>
+
+    <div class="contact-layout reveal">
+
+      <div class="info-stack">
+        <div class="info-card">
+          <div class="info-card-icon">
+            <svg fill="none" stroke-width="1.8" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div>
+            <div class="info-card-label" data-vi="Trụ sở chính" data-en="Headquarters">Trụ sở chính</div>
+            <div class="info-card-val">87A Hàm Nghi, P. Nguyễn Thái Bình, Quận 1, TP. Hồ Chí Minh</div>
+          </div>
+        </div>
+        <div class="info-card">
+          <div class="info-card-icon">
+            <svg fill="none" stroke-width="1.8" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.18h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.77a16 16 0 0 0 5.92 5.92l.93-.93a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21.35 16z"/></svg>
+          </div>
+          <div>
+            <div class="info-card-label" data-vi="Điện thoại" data-en="Phone">Điện thoại</div>
+            <div class="info-card-val"><a href="tel:02888892966">028 8889 2966</a></div>
+          </div>
+        </div>
+        <div class="info-card">
+          <div class="info-card-icon">
+            <svg fill="none" stroke-width="1.8" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </div>
+          <div>
+            <div class="info-card-label">Email</div>
+            <div class="info-card-val"><a href="mailto:tnf@tnfgroup.com.vn">tnf@tnfgroup.com.vn</a></div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="cform" id="contactForm">
+          <div class="form-row">
+            <div class="fgroup">
+              <label data-vi="Họ và tên *" data-en="Full Name *">Họ và tên *</label>
+              <input type="text" id="f-name" data-ph-vi="Nguyễn Văn A" data-ph-en="John Doe" placeholder="Nguyễn Văn A" />
+            </div>
+            <div class="fgroup">
+              <label data-vi="Công ty" data-en="Company">Công ty</label>
+              <input type="text" id="f-company" data-ph-vi="Tên công ty" data-ph-en="Company name" placeholder="Tên công ty" />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="fgroup">
+              <label data-vi="Số điện thoại *" data-en="Phone *">Số điện thoại *</label>
+              <input type="tel" id="f-phone" placeholder="0912 345 678" />
+            </div>
+            <div class="fgroup">
+              <label>Email *</label>
+              <input type="email" id="f-email" placeholder="email@company.com" />
+            </div>
+          </div>
+          <div class="fgroup">
+            <label data-vi="Nội dung *" data-en="Message *">Nội dung *</label>
+            <textarea id="f-msg" data-ph-vi="Mô tả nhu cầu tài chính của bạn..." data-ph-en="Describe your financial needs..." placeholder="Mô tả nhu cầu tài chính của bạn..."></textarea>
+          </div>
+          <button class="form-submit" onclick="submitForm()">
+            <span data-vi="Gửi yêu cầu tư vấn" data-en="Send Inquiry">Gửi yêu cầu tư vấn</span>
+            <svg fill="none" stroke-width="2" viewBox="0 0 24 24"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          </button>
+        </div>
+        <div class="success-state" id="formSuccess">
+          <div class="success-ring">
+            <svg fill="none" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+          <h3 data-vi="Gửi thành công!" data-en="Message Sent!">Gửi thành công!</h3>
+          <p data-vi="Chúng tôi sẽ liên hệ lại trong thời gian sớm nhất." data-en="We will get back to you as soon as possible.">Chúng tôi sẽ liên hệ lại trong thời gian sớm nhất.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════ FOOTER ══ -->
+<footer>
+  <div class="container footer-body">
+    <div class="footer-cols">
+
+      <div>
+        <div class="footer-logo-wrap">
+          <img src="assets/images/logo.png" alt="TNF Group" height="38" />
+        </div>
+        <p class="footer-tagline"
+           data-vi="Đối tác tài chính chiến lược, kết nối nguồn vốn và kiến tạo tăng trưởng bền vững."
+           data-en="Strategic financial partner, connecting capital and building sustainable growth.">
+          Đối tác tài chính chiến lược, kết nối nguồn vốn và kiến tạo tăng trưởng bền vững.
+        </p>
+        <div class="footer-live">
+          <span class="live-dot"></span>
+          <span data-vi="Đang hoạt động" data-en="Active">Đang hoạt động</span>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4 data-vi="Điều hướng" data-en="Navigation">Điều hướng</h4>
+        <ul>
+          <li><a href="#hero"       data-vi="Trang chủ"         data-en="Home">Trang chủ</a></li>
+          <li><a href="#about"      data-vi="Giới thiệu"        data-en="About">Giới thiệu</a></li>
+          <li><a href="#services"   data-vi="Dịch vụ"           data-en="Services">Dịch vụ</a></li>
+          <li><a href="#disclosure" data-vi="Công bố thông tin" data-en="Disclosure">Công bố TT</a></li>
+          <li><a href="#contact"    data-vi="Liên hệ"           data-en="Contact">Liên hệ</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 data-vi="Dịch vụ" data-en="Services">Dịch vụ</h4>
+        <ul>
+          <li><a href="#services" data-vi="Quản lý vốn & Ngân quỹ"   data-en="Capital & Treasury">Quản lý vốn &amp; Ngân quỹ</a></li>
+          <li><a href="#services" data-vi="Hợp tác đầu tư"           data-en="Investment Cooperation">Hợp tác đầu tư</a></li>
+          <li><a href="#services" data-vi="Giải pháp tài chính"      data-en="Financial Solutions">Giải pháp tài chính</a></li>
+          <li><a href="#services" data-vi="Hỗ trợ tài chính DN"      data-en="Corporate Finance">Hỗ trợ tài chính DN</a></li>
+          <li><a href="#services" data-vi="Quản lý tài sản"          data-en="Asset Management">Quản lý tài sản</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 data-vi="Liên hệ" data-en="Contact">Liên hệ</h4>
+        <div class="footer-contacts">
+          <div class="fc-row">
+            <svg fill="none" stroke-width="1.8" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>87A Hàm Nghi, P. Nguyễn Thái Bình, Q.1, TP. Hồ Chí Minh</span>
+          </div>
+          <div class="fc-row">
+            <svg fill="none" stroke-width="1.8" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.18h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.77a16 16 0 0 0 5.92 5.92l.93-.93a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21.35 16z"/></svg>
+            <a href="tel:02888892966">028 8889 2966</a>
+          </div>
+          <div class="fc-row">
+            <svg fill="none" stroke-width="1.8" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <a href="mailto:tnf@tnfgroup.com.vn">tnf@tnfgroup.com.vn</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-bar">
+      <p>© <span id="year"></span> Công ty CP T&amp;N Financial Group. <span data-vi="Bản quyền thuộc về TNF." data-en="All rights reserved.">Bản quyền thuộc về TNF.</span></p>
+      <p data-vi="Giấy phép ĐKKD: đang cập nhật" data-en="Business License: updating">Giấy phép ĐKKD: đang cập nhật</p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
