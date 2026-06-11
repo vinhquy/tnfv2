@@ -133,9 +133,6 @@ button { cursor: pointer; font-family: inherit; border: none; background: none; 
 /* ── NAVBAR ─────────────────────────────────────────────────────────────── */
 #navbar {
   position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-  transition: background .4s ease, box-shadow .4s ease;
-}
-#navbar.scrolled {
   background: rgba(255,255,255,.97);
   backdrop-filter: blur(14px);
   box-shadow: 0 1px 0 var(--gray-200), 0 4px 24px rgba(0,0,0,.07);
@@ -154,29 +151,24 @@ button { cursor: pointer; font-family: inherit; border: none; background: none; 
 .nav-links a {
   padding: 7px 15px; border-radius: var(--r-sm);
   font-size: .85rem; font-weight: 500; white-space: nowrap;
-  color: rgba(255,255,255,.88); transition: background .2s, color .2s;
+  color: #374151; transition: background .2s, color .2s;
 }
-.nav-links a:hover { background: rgba(255,255,255,.13); color: var(--white); }
-#navbar.scrolled .nav-links a { color: #374151; }
-#navbar.scrolled .nav-links a:hover { background: var(--purple-pale); color: var(--purple); }
+.nav-links a:hover { background: var(--purple-pale); color: var(--purple); }
 
 .nav-actions { display: flex; align-items: center; gap: 10px; }
 .lang-toggle {
   padding: 5px 14px; border-radius: 99px;
   font-size: .75rem; font-weight: 700; letter-spacing: .06em;
-  border: 1.5px solid rgba(255,255,255,.4); color: var(--white);
+  border: 1.5px solid var(--purple); color: var(--purple);
   transition: all .2s;
 }
-.lang-toggle:hover { background: rgba(255,255,255,.12); }
-#navbar.scrolled .lang-toggle { border-color: var(--purple); color: var(--purple); }
-#navbar.scrolled .lang-toggle:hover { background: var(--purple); color: var(--white); }
+.lang-toggle:hover { background: var(--purple); color: var(--white); }
 
 .hamburger {
   display: none; flex-direction: column; gap: 5px;
   padding: 7px; border-radius: var(--r-sm);
 }
-.hamburger span { display: block; width: 22px; height: 2px; background: var(--white); border-radius: 2px; transition: all .3s; }
-#navbar.scrolled .hamburger span { background: var(--purple); }
+.hamburger span { display: block; width: 22px; height: 2px; background: var(--purple); border-radius: 2px; transition: all .3s; }
 
 /* mobile drawer */
 .mobile-menu {
