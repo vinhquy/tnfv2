@@ -10,17 +10,17 @@
 html { scroll-behavior: smooth; font-size: 16px; }
 
 :root {
-  /* ── Brand palette (from original source) ── */
-  --purple:        #4d3a95;
-  --purple-dark:   #3a2a74;
-  --purple-mid:    #6b52b8;
-  --purple-pale:   #f0edf9;
+  /* ── Brand palette — Option G (lighter blue-violet) ── */
+  --purple:        #5a50d8;
+  --purple-dark:   #4538b8;
+  --purple-mid:    #7068e4;
+  --purple-pale:   #eeedfb;
   --orange:        #f0b11d;
   --orange-light:  #f7c94a;
   --orange-dark:   #d4940a;
 
   /* ── Logo gradient (matches actual logo) ── */
-  --brand-gradient: linear-gradient(135deg, #4d3a95 0%, #8b3fa8 40%, #f0b11d 100%);
+  --brand-gradient: linear-gradient(135deg, #5a50d8 0%, #8b5fbf 40%, #f0b11d 100%);
 
   /* ── Neutral ── */
   --navy:          #0d1a26;
@@ -48,7 +48,7 @@ html { scroll-behavior: smooth; font-size: 16px; }
   --shadow-md:   0 2px 8px rgba(0,0,0,.07), 0 4px 20px rgba(0,0,0,.06);
   --shadow-lg:   0 4px 16px rgba(0,0,0,.08), 0 8px 40px rgba(0,0,0,.07);
   --shadow-card: 0 1px 3px rgba(0,0,0,.05), 0 4px 16px rgba(0,0,0,.05);
-  --shadow-purple: 0 4px 24px rgba(77,58,149,.18);
+  --shadow-purple: 0 4px 24px rgba(90,80,216,.2);
   --shadow-orange: 0 4px 24px rgba(240,177,29,.25);
 }
 
@@ -147,14 +147,21 @@ button { cursor: pointer; font-family: inherit; border: none; background: none; 
 .nav-logo {
   display: flex; align-items: center; gap: 0; flex-shrink: 0;
 }
-.nav-logo img {
-  height: 44px; width: auto;
-  /* white logo on dark hero */
-  filter: brightness(0) invert(1);
-  transition: filter .35s;
+/* Backdrop pill: keeps logo readable on dark hero AND white scrolled navbar */
+.nav-logo-backdrop {
+  display: flex; align-items: center;
+  background: rgba(255,255,255,.13);
+  border-radius: var(--r-md);
+  padding: 5px 12px;
+  transition: background .35s;
 }
-#navbar.scrolled .nav-logo img {
-  filter: none; /* show full color logo when scrolled */
+#navbar.scrolled .nav-logo-backdrop {
+  background: transparent;
+  padding: 5px 0;
+}
+.nav-logo img {
+  height: 40px; width: auto;
+  display: block;
 }
 .nav-links { display: flex; align-items: center; gap: 2px; }
 .nav-links a {
@@ -202,7 +209,7 @@ button { cursor: pointer; font-family: inherit; border: none; background: none; 
 #hero {
   min-height: 100vh; display: flex; flex-direction: column;
   position: relative; overflow: hidden;
-  background: linear-gradient(140deg, #0d0822 0%, #1e1260 40%, #4d3a95 80%, #7b3fa8 100%);
+  background: linear-gradient(140deg, #0f0d38 0%, #1e1860 40%, #4a3fcc 80%, #6b5fe0 100%);
 }
 .hero-bg-grid {
   position: absolute; inset: 0; pointer-events: none;
@@ -214,7 +221,7 @@ button { cursor: pointer; font-family: inherit; border: none; background: none; 
 .hero-glow-a {
   position: absolute; width: 480px; height: 480px; border-radius: 50%;
   bottom: -100px; left: -80px;
-  background: rgba(77,58,149,.35); filter: blur(90px); pointer-events: none;
+  background: rgba(90,80,216,.3); filter: blur(90px); pointer-events: none;
 }
 .hero-glow-b {
   position: absolute; width: 320px; height: 320px; border-radius: 50%;
@@ -354,7 +361,7 @@ button { cursor: pointer; font-family: inherit; border: none; background: none; 
 /* ── SERVICES ───────────────────────────────────────────────────────────── */
 #services {
   padding: 96px 0;
-  background: linear-gradient(165deg, #0d0822 0%, #1a1050 50%, #2e1d6e 100%);
+  background: linear-gradient(165deg, #0f0d38 0%, #1a1558 50%, #3530a8 100%);
 }
 .services-hd { text-align: center; max-width: 540px; margin: 0 auto 52px; }
 .services-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 18px; }
@@ -526,7 +533,7 @@ footer {
 }
 .footer-body { padding: 56px 0 28px; }
 .footer-cols { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1.2fr; gap: 36px; margin-bottom: 44px; }
-.footer-logo-wrap { display: flex; align-items: center; gap: 0; margin-bottom: 14px; }
+.footer-logo-wrap { display: flex; align-items: center; margin-bottom: 14px; }
 .footer-logo-wrap img { height: 38px; width: auto; }
 .footer-tagline { font-size: .8rem; color: rgba(255,255,255,.38); line-height: 1.65; margin-bottom: 16px; }
 .footer-live { display: flex; align-items: center; gap: 8px; font-size: .75rem; color: rgba(255,255,255,.32); }
@@ -535,25 +542,28 @@ footer {
 
 .footer-col h4 {
   font-size: .7rem; font-weight: 700; letter-spacing: .16em;
-  text-transform: uppercase; color: rgba(255,255,255,.65); margin-bottom: 18px;
+  text-transform: uppercase; color: rgba(255,255,255,.75); margin-bottom: 18px;
 }
 .footer-col ul { display: flex; flex-direction: column; gap: 9px; }
 .footer-col ul a {
-  font-size: .8rem; color: rgba(255,255,255,.38); transition: color .2s;
+  font-size: .8rem; color: rgba(255,255,255,.55); transition: color .2s;
   display: inline-flex; align-items: center; gap: 5px;
 }
 .footer-col ul a:hover { color: var(--orange); }
 .footer-contacts { display: flex; flex-direction: column; gap: 12px; }
 .fc-row { display: flex; gap: 10px; align-items: flex-start; }
 .fc-row svg { width: 13px; height: 13px; stroke: var(--orange); flex-shrink: 0; margin-top: 2px; }
-.fc-row span, .fc-row a { font-size: .78rem; color: rgba(255,255,255,.38); line-height: 1.5; transition: color .2s; }
-.fc-row a:hover { color: rgba(255,255,255,.7); }
+.fc-row span, .fc-row a { font-size: .78rem; color: rgba(255,255,255,.55); line-height: 1.5; transition: color .2s; }
+.fc-row a:hover { color: rgba(255,255,255,.85); }
+
+.footer-tagline { font-size: .8rem; color: rgba(255,255,255,.5); line-height: 1.65; margin-bottom: 16px; }
+.footer-live { display: flex; align-items: center; gap: 8px; font-size: .75rem; color: rgba(255,255,255,.45); }
 
 .footer-bar {
-  padding-top: 20px; border-top: 1px solid rgba(255,255,255,.06);
+  padding-top: 20px; border-top: 1px solid rgba(255,255,255,.1);
   display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap;
 }
-.footer-bar p { font-size: .73rem; color: rgba(255,255,255,.2); }
+.footer-bar p { font-size: .73rem; color: rgba(255,255,255,.4); }
 
 /* ── RESPONSIVE ─────────────────────────────────────────────────────────── */
 @media (max-width: 1024px) {
@@ -579,4 +589,6 @@ footer {
 @media (max-width: 460px) {
   .hero-ctas { flex-direction: column; }
   .btn { justify-content: center; }
+  .footer-body { padding: 48px 20px 28px; }
+  .footer-bar  { padding: 16px 0 0; }
 }
