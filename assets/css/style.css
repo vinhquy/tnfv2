@@ -145,23 +145,10 @@ button { cursor: pointer; font-family: inherit; border: none; background: none; 
   height: 70px; gap: 16px;
 }
 .nav-logo {
-  display: flex; align-items: center; gap: 0; flex-shrink: 0;
-}
-/* Backdrop pill: keeps logo readable on dark hero AND white scrolled navbar */
-.nav-logo-backdrop {
-  display: flex; align-items: center;
-  background: rgba(255,255,255,.13);
-  border-radius: var(--r-md);
-  padding: 5px 12px;
-  transition: background .35s;
-}
-#navbar.scrolled .nav-logo-backdrop {
-  background: transparent;
-  padding: 5px 0;
+  display: flex; align-items: center; flex-shrink: 0;
 }
 .nav-logo img {
-  height: 40px; width: auto;
-  display: block;
+  height: 44px; width: auto; display: block;
 }
 .nav-links { display: flex; align-items: center; gap: 2px; }
 .nav-links a {
