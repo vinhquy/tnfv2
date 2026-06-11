@@ -340,7 +340,7 @@ button { cursor: pointer; font-family: inherit; border: none; background: none; 
 /* ── SERVICES ───────────────────────────────────────────────────────────── */
 #services {
   padding: 96px 0;
-  background: linear-gradient(165deg, #2a1060 0%, #4d3a93 50%, #7c3fc4 100%);
+  background: linear-gradient(165deg, #6e2fd4 0%, #9547f7 55%, #a855f7 100%);
 }
 .services-hd { text-align: center; max-width: 540px; margin: 0 auto 52px; }
 .services-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 18px; }
